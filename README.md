@@ -97,7 +97,7 @@ ASTRA follows a **9-stage pipeline** from raw image to final object selection:
 │  Input Image ──► Stage 1: Image Preprocessing (Resize + Normalize)  │
 │                      │                                              │
 │                      ▼                                              │
-│               Stage 2: CNN Object Detector (YOLOv5s)               │
+│               Stage 2: CNN Object Detector (YOLOv5s)                │
 │                      │                    │                         │
 │                      ▼                    ▼                         │
 │           Detected Object List     Visual Feature Maps              │
@@ -120,7 +120,7 @@ ASTRA follows a **9-stage pipeline** from raw image to final object selection:
 │          Stage 7: Scene Context Reasoning (Sp score)                │
 │                      │                                              │
 │                      ▼                                              │
-│             Stage 8: FPGA Similarity Accelerator (*)               │
+│             Stage 8: FPGA Similarity Accelerator (*)                │
 │                      │                                              │
 │                      ▼                                              │
 │          Stage 9: Object Ranking Engine → O* (Best Object)          │
@@ -136,15 +136,15 @@ ASTRA follows a **9-stage pipeline** from raw image to final object selection:
 │   VEGA RISC-V Processor  │────►│   FPGA Fabric (Genesys-2)│
 │                          │     │                          │
 │  • Image preprocessing   │     │  • CNN Feature Accel.    │
-│  • Task text encoding    │     │  • Task-Guided Attention  │
-│  • Graph construction    │     │  • Vector Similarity Eng. │
-│  • Control & scheduling  │     │  • Object Ranking Accel.  │
+│  • Task text encoding    │     │  • Task-Guided Attention │
+│  • Graph construction    │     │  • Vector Similarity Eng.│
+│  • Control & scheduling  │     │  • Object Ranking Accel. │
 └──────────────────────────┘     └──────────┬───────────────┘
                                             │
                                             ▼
                                    ┌─────────────────┐
-                                   │  Final Prediction│
-                                   │  O* + Score + BBox│
+                                   │Final  Prediction│
+                                   │O* + Score + BBox│
                                    └─────────────────┘
 ```
 
