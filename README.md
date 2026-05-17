@@ -104,7 +104,7 @@ ASTRA/
 
 ### Option 1 — Google Colab *(Recommended)*
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/KeshavJ1007/Adaptive-Semantic-Task-Reasoning-Architecture/blob/main/ASTRA_Stage2A_Colab_v3.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Le6vMyvugV70hDRgegP_VZqqNPF81qsV?usp=sharing)
 
 1. Click the badge above
 2. Set **Runtime → Change runtime type → CPU**
